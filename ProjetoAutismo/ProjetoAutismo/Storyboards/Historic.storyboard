@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad11_0rounded" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Historic-->
+        <scene sceneID="jBo-vA-ex1">
+            <objects>
+                <viewController storyboardIdentifier="historic" id="2B3-7V-sxI" customClass="HistoricViewController" customModule="ProjetoAutismo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0CA-SJ-Lkl">
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GFQ-aH-jBJ">
+                                <rect key="frame" x="0.0" y="24" width="1194" height="745"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" id="88D-CT-i8L" customClass="HistoricTableViewCell" customModule="ProjetoAutismo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="1194" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="88D-CT-i8L" id="LAK-eo-E77">
+                                            <rect key="frame" x="0.0" y="0.0" width="1194" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q3-8b-o31">
+                                                    <rect key="frame" x="66" y="19" width="1097" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="menu" translatesAutoresizingMaskIntoConstraints="NO" id="ces-fx-qkv">
+                                                    <rect key="frame" x="8" y="16" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ces-fx-qkv" secondAttribute="height" id="dc8-0x-XIs"/>
+                                                        <constraint firstAttribute="height" constant="50" id="qfP-jV-SQs"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="ces-fx-qkv" secondAttribute="bottom" constant="16" id="0Qq-Ze-W7R"/>
+                                                <constraint firstItem="6Q3-8b-o31" firstAttribute="bottom" secondItem="LAK-eo-E77" secondAttribute="bottomMargin" constant="8" id="3Tb-Fm-c4V"/>
+                                                <constraint firstItem="6Q3-8b-o31" firstAttribute="top" secondItem="LAK-eo-E77" secondAttribute="topMargin" constant="8" id="HX1-fp-Yjd"/>
+                                                <constraint firstItem="ces-fx-qkv" firstAttribute="leading" secondItem="LAK-eo-E77" secondAttribute="leading" constant="8" id="R62-Ds-f5f"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6Q3-8b-o31" secondAttribute="trailing" constant="16" id="gJR-mi-cVf"/>
+                                                <constraint firstItem="ces-fx-qkv" firstAttribute="top" secondItem="LAK-eo-E77" secondAttribute="top" constant="16" id="kRA-mW-XLl"/>
+                                                <constraint firstItem="6Q3-8b-o31" firstAttribute="leading" secondItem="ces-fx-qkv" secondAttribute="trailing" constant="8" id="tOb-WJ-bdU"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="textLbl" destination="6Q3-8b-o31" id="2Sr-gF-zcI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GFQ-aH-jBJ" firstAttribute="top" secondItem="nxF-bQ-qO4" secondAttribute="top" id="GsL-rb-wiU"/>
+                            <constraint firstItem="GFQ-aH-jBJ" firstAttribute="leading" secondItem="nxF-bQ-qO4" secondAttribute="leading" id="bUv-VY-Hhy"/>
+                            <constraint firstItem="nxF-bQ-qO4" firstAttribute="trailing" secondItem="GFQ-aH-jBJ" secondAttribute="trailing" id="fKK-Cx-FuF"/>
+                            <constraint firstItem="nxF-bQ-qO4" firstAttribute="bottom" secondItem="GFQ-aH-jBJ" secondAttribute="bottom" id="kmf-dN-oZy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nxF-bQ-qO4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Historic" id="QOG-sk-Nok"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="GFQ-aH-jBJ" id="8mb-ZB-XSi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="es6-87-S0e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="222"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="menu" width="23" height="23"/>
+    </resources>
+</document>
