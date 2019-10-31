@@ -1,14 +1,14 @@
 //
-//  NotebookViewController.swift
+//  MenuViewController.swift
 //  ProjetoAutismo
 //
-//  Created by anthony gianeli on 30/10/19.
+//  Created by anthony gianeli on 31/10/19.
 //  Copyright © 2019 anthony.gianeli. All rights reserved.
 //
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class MenuViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
