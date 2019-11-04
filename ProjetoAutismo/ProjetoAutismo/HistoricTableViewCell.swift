@@ -11,6 +11,8 @@ import UIKit
 class HistoricTableViewCell: UITableViewCell {
 
     @IBOutlet weak var textLbl: UILabel!
+    @IBOutlet weak var imagem: UIImageView!
+    @IBOutlet weak var descricao: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

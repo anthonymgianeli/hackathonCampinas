@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>724669951674-fsim0l9tjvdvjc3narli4jci8olb0vkd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.724669951674-fsim0l9tjvdvjc3narli4jci8olb0vkd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBu_CuW4U4ibEsy5nCz89KXLF4qeao80LE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>724669951674</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.anthonygianeli.ProjetoAutismo</string>
+	<key>PROJECT_ID</key>
+	<string>projetoautismo-fe620</string>
+	<key>STORAGE_BUCKET</key>
+	<string>projetoautismo-fe620.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:724669951674:ios:48adcc72f21e56577adc83</string>
+	<key>DATABASE_URL</key>
+	<string>https://projetoautismo-fe620.firebaseio.com</string>
+</dict>
+</plist>

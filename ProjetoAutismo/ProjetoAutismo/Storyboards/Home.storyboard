@@ -20,7 +20,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="HrP-NU-p2B"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="0K7-Cr-bIn"/>
+                    <tabBarItem key="tabBarItem" title="Home" id="0K7-Cr-bIn">
+                        <color key="badgeColor" name="controlAccentColor" catalog="System" colorSpace="catalog"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MgV-qJ-t4g" userLabel="First Responder" sceneMemberID="firstResponder"/>
